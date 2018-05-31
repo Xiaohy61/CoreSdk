@@ -1,0 +1,71 @@
+-- Merging decision tree log ---
+manifest
+ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:1:1-21:12
+INJECTED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:1:1-21:12
+INJECTED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:1:1-21:12
+INJECTED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:1:1-21:12
+INJECTED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:1:1-21:12
+INJECTED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:1:1-21:12
+INJECTED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:1:1-21:12
+	package
+		ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:2:11-44
+		INJECTED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml
+		INJECTED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml
+		ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:1:1-21:12
+		INJECTED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml
+		ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:1:1-21:12
+		INJECTED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:1:11-69
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:4:5-78
+	android:name
+		ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:4:22-76
+uses-permission#android.permission.INTERNET
+ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:5:5-66
+	android:name
+		ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:6:5-80
+	android:name
+		ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:6:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:7:5-79
+	android:name
+		ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:7:22-77
+application
+ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:9:5-20:19
+provider#com.skyward.android.sdk.utils.SdkProvider
+ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:10:9-18:20
+	android:grantUriPermissions
+		ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:13:13-47
+	android:authorities
+		ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:12:13-60
+	android:exported
+		ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:14:13-37
+	android:name
+		ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:11:13-69
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:15:13-17:54
+	android:resource
+		ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:17:17-51
+	android:name
+		ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:16:17-67
+uses-sdk
+INJECTED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml
+INJECTED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml
+INJECTED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml
+INJECTED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml
+		ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml
+		INJECTED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml
+		ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml
+		INJECTED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml

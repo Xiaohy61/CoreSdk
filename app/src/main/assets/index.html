@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="{CHARSET}">
+    <title>webview</title>
+
+    <style type="text/css">
+			body{
+				background: #cbcc1a;
+			}
+
+		</style>
+
+</head>
+<body>
+
+<h2>webview</h2>
+<div>
+    <span>请输入要传递的值</span>
+    <input type="text" id="input"></input>
+
+</div>
+
+<button id="btn">点我</button>
+
+<script type="text/javascript">
+			var btnEle = document.getElementById("btn");
+			var inputEle = document.getElementById("input");
+			btnEle.addEventListener("click",function(){
+				var str = inputEle.value;
+				if(window.skyward){
+					skyward.webCallBackValue(str);
+				}else{
+					alert("skyward not fount")
+				}
+			})
+
+			var remote = function(str){
+				inputEle.value = str
+			}
+
+		</script>
+
+</body>
+</html>

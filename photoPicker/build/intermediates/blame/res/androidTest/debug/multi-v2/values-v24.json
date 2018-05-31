@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "F:\\AndroidProject\\2018\\CoreSdk\\photoPicker\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v24\\values-v24.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\31663\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.0.1.aar\\2caeff781e73d501a2a8e916025a286c\\res\\values-v24\\values-v24.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,124,188,257",
+                        "endColumns": "68,63,68,69",
+                        "endOffsets": "119,183,252,322"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="toastNormalBackground">#B3000000</color>
+    <color name="toastErrorBackground">#DC143C</color>
+    <color name="toastSuccessBackground">#009688</color>
+    <color name="toastWarnBackground">#FFBE00</color>
+    <color name="toastInfoBackground">#10AEFF</color>
+    <color name="update_text_color">#666666</color>
+    <color name="update_btn_color">#f53b55</color>
+    <color name="text_color">#212121</color>
+</resources>
