@@ -13,10 +13,12 @@ import java.util.Map;
  */
 public class DownloadFile {
 
-    private static DownloadFile instance = null;
 
-    public static final String DOWNLOAD_PATCH = Environment.getExternalStorageDirectory().getAbsolutePath() + "/11AAAA/";
-    //文件下载任务索引，String为url,用来唯一区别并操作下载的文件
+
+    private static final String DOWNLOAD_PATCH = Environment.getExternalStorageDirectory().getAbsolutePath() + "/downloads/";
+    /**
+     * 文件下载任务索引，String为url,用来唯一区别并操作下载的文件
+     */
     private Map<String, DownloadTask> mDownloadTasks;
 
     private static class Holder {
@@ -89,14 +91,18 @@ public class DownloadFile {
     /**
      * 默认下载目录
      *
-     * @return
+     * @return string
      */
     private String getDefaultDirectory() {
 
         return DOWNLOAD_PATCH;
     }
 
-    // 获取下载文件的名称
+    /**
+     * 获取下载文件的名称
+     * @param url url
+     * @return string
+     */
     private String getFileName(String url) {
         return url.substring(url.lastIndexOf("/") + 1);
     }

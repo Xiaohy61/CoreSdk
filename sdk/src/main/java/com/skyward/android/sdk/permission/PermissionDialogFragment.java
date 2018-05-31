@@ -132,7 +132,7 @@ public class PermissionDialogFragment extends DialogFragment {
         btnSure.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                gotoSetting(getActivity());
+                gotoSetting(getContext());
             }
         });
     }
@@ -200,6 +200,7 @@ public class PermissionDialogFragment extends DialogFragment {
         } else {
             //如果授权失败，把弹窗显示出来让用户手动设置授权
             tipLayout.setVisibility(View.VISIBLE);
+            mListener.onPermissionFailure(permissions);
         }
     }
 

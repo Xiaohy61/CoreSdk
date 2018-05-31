@@ -1,6 +1,7 @@
 package com.skyward.android.sdk.network.update.app;
 
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -36,7 +37,6 @@ import java.util.ArrayList;
 
 /**
  * @author skyward
- *
  */
 public class UpdateAppDialogFragment extends BaseDialogFragment implements View.OnClickListener {
 
@@ -54,15 +54,17 @@ public class UpdateAppDialogFragment extends BaseDialogFragment implements View.
     private static final String APP_SIZE = "appSize";
     private static final String APP_UPDATE_BUTTON_TEXT = "appUpdateButtonText";
     private static final String UPDATE_LOGS = "updateLogs";
-    private static final String TOP_IMAGE ="topImage";
-    private static final String IS_FORCE_UPDATE="isForcedUpdate";
+    private static final String TOP_IMAGE = "topImage";
+    private static final String IS_FORCE_UPDATE = "isForcedUpdate";
     private static final String UPDATE_BUTTON_BACKGROUND = "updateButtonBackground";
 
 
     private final String DIR_NAME = "appUpdate";
 
-    private @DrawableRes int topImage =0;
-    private @DrawableRes int updateButtonBackground = 0;
+    private @DrawableRes
+    int topImage = 0;
+    private @DrawableRes
+    int updateButtonBackground = 0;
     private String downloadUrl;
     private String version;
     private String appSize;
@@ -80,7 +82,7 @@ public class UpdateAppDialogFragment extends BaseDialogFragment implements View.
 
     public static UpdateAppDialogFragment newInstance(String downloadUrl, String version, String appSize,
                                                       String appUpdateButtonText, ArrayList<String> updateLogs,
-                                                      @DrawableRes int topImage,boolean isForcedUpdate,
+                                                      @DrawableRes int topImage, boolean isForcedUpdate,
                                                       @DrawableRes int updateButtonBackground) {
 
         Bundle args = new Bundle();
@@ -90,13 +92,12 @@ public class UpdateAppDialogFragment extends BaseDialogFragment implements View.
         args.putString(APP_SIZE, appSize);
         args.putString(APP_UPDATE_BUTTON_TEXT, appUpdateButtonText);
         args.putStringArrayList(UPDATE_LOGS, updateLogs);
-        args.putInt(TOP_IMAGE,topImage);
-        args.putBoolean(IS_FORCE_UPDATE,isForcedUpdate);
-        args.putInt(UPDATE_BUTTON_BACKGROUND,updateButtonBackground);
+        args.putInt(TOP_IMAGE, topImage);
+        args.putBoolean(IS_FORCE_UPDATE, isForcedUpdate);
+        args.putInt(UPDATE_BUTTON_BACKGROUND, updateButtonBackground);
         fragment.setArguments(args);
         return fragment;
     }
-
 
 
     @Override
@@ -120,7 +121,7 @@ public class UpdateAppDialogFragment extends BaseDialogFragment implements View.
         return R.layout.fragment_update_app_dialog;
     }
 
-    public void setContext(Context context){
+    public void setContext(Context context) {
         this.mContext = context;
     }
 
@@ -142,38 +143,38 @@ public class UpdateAppDialogFragment extends BaseDialogFragment implements View.
     protected void initLogic(Bundle savedInstanceState) {
         super.initLogic(savedInstanceState);
 
-        if(isForcedUpdate){
+        if (isForcedUpdate) {
             closeLayout.setVisibility(View.GONE);
-        }else {
+        } else {
             closeLayout.setVisibility(View.VISIBLE);
         }
 
-        if(topImage != 0){
+        if (topImage != 0) {
             ivTopImage.setImageResource(topImage);
         }
 
-        if(!TextUtils.isEmpty(appUpdateButtonText)){
+        if (!TextUtils.isEmpty(appUpdateButtonText)) {
             updateBtn.setText(appUpdateButtonText);
         }
 
-        if(!TextUtils.isEmpty(version)){
+        if (!TextUtils.isEmpty(version)) {
             versionText.setText(MessageFormat.format("最新版本：{0}", version));
         }
 
-        if(!TextUtils.isEmpty(appSize)){
+        if (!TextUtils.isEmpty(appSize)) {
             appSizeText.setText(MessageFormat.format("新版本大小：{0}", appSize));
         }
 
-        if(updateLogs.size() != 0){
+        if (updateLogs.size() != 0) {
             updateLogsTitle.setVisibility(View.VISIBLE);
-        }else {
+        } else {
             updateLogsTitle.setVisibility(View.GONE);
         }
-        if(updateButtonBackground != 0){
+        if (updateButtonBackground != 0) {
 
-            updateBtn.setBackground(ContextCompat.getDrawable(mContext,updateButtonBackground));
+            updateBtn.setBackground(ContextCompat.getDrawable(mContext, updateButtonBackground));
         }
-        mUpdateAppLogsAdapter = new UpdateAppLogsAdapter(R.layout.app_update_logs_item,updateLogs);
+        mUpdateAppLogsAdapter = new UpdateAppLogsAdapter(R.layout.app_update_logs_item, updateLogs);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(mContext));
         mRecyclerView.setAdapter(mUpdateAppLogsAdapter);
 
@@ -227,39 +228,7 @@ public class UpdateAppDialogFragment extends BaseDialogFragment implements View.
     }
 
     private void downloadApp() {
-
-
         DownloadFile.getInstance().download(downloadUrl);
-
-//        new DownloadFile().download( getActivity(),downloadUrl, new OnDownloadListener() {
-//            @Override
-//            public void onSuccess(File file) {
-//                dismiss();
-//                checkPackage(mContext, file);
-//            }
-//
-//            @Override
-//            public void progress(float progress) {
-//                mProgressbar.setProgress((int) (progress * 100));
-//            }
-//
-//            @Override
-//            public void failure(Throwable e) {
-//                MyToast.getInstance().error("更新下载失败，请稍后重试!");
-//            }
-//
-//            @Override
-//            public void onPause() {
-//
-//            }
-//
-//            @Override
-//            public void onCancel() {
-//
-//            }
-//        });
-
-
     }
 
     public void checkPackage(Context context, File file) {
@@ -286,6 +255,7 @@ public class UpdateAppDialogFragment extends BaseDialogFragment implements View.
         context.startActivity(intent);
     }
 
+    @SuppressLint("ObsoleteSdkInt")
     @Override
     public void show(FragmentManager manager, String tag) {
 

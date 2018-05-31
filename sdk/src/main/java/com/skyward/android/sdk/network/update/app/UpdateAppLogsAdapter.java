@@ -7,14 +7,15 @@ import com.skyward.android.sdk.base.BaseRecyclerViewHolder;
 import java.util.ArrayList;
 
 /**
- * @author: skyward
+ *
  * date: 2018/4/27
  * desc:
+ * @author skyward
  */
 public class UpdateAppLogsAdapter extends BaseRecyclerAdapter<String,BaseRecyclerViewHolder> {
 
 
-    public UpdateAppLogsAdapter(int layoutResId, ArrayList<String> data) {
+    protected UpdateAppLogsAdapter(int layoutResId, ArrayList<String> data) {
         super(layoutResId, data);
     }
 

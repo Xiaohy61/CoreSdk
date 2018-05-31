@@ -8,9 +8,10 @@ import android.text.TextUtils;
 import java.util.ArrayList;
 
 /**
- * @author: skyward
+ *
  * date: 2018/4/26
  * desc:
+ * @author skyward
  */
 public class UpdateApp {
 
@@ -21,12 +22,13 @@ public class UpdateApp {
     private ArrayList<String> appUpdateLogs;
     private String appUpdateButtonText;
     private boolean isForcedUpdate;
-    private @DrawableRes int topStyleImage;
-    private @DrawableRes int updateButtonBackground;
+    private @DrawableRes
+    int topStyleImage;
+    private @DrawableRes
+    int updateButtonBackground;
 
 
-
-    public  UpdateApp(Builder builder) {
+    private UpdateApp(Builder builder) {
         this.mContext = builder.mContext;
         this.appVersion = builder.appVersion;
         this.appSize = builder.appSize;
@@ -40,9 +42,6 @@ public class UpdateApp {
     }
 
 
-
-
-
     public static class Builder {
         private Context mContext;
         private String appVersion;
@@ -50,8 +49,10 @@ public class UpdateApp {
         private String appDownloadUrl;
         private ArrayList<String> appUpdateLogs = new ArrayList<>();
         private String appUpdateButtonText;
-        private @DrawableRes int topStyleImage;
-        private @DrawableRes int updateButtonBackground;
+        private @DrawableRes
+        int topStyleImage;
+        private @DrawableRes
+        int updateButtonBackground;
         private boolean isForcedUpdate = false;
 
         public Builder(Context context) {
@@ -107,11 +108,11 @@ public class UpdateApp {
     private void openUpdatePanel() {
 
 
-        if(TextUtils.isEmpty(appDownloadUrl)){
+        if (TextUtils.isEmpty(appDownloadUrl)) {
             throw new NullPointerException("请输入有效的app下载地址");
         }
 
-        UpdateAppDialogFragment dialogFragment = UpdateAppDialogFragment.newInstance(appDownloadUrl,appVersion, appSize, appUpdateButtonText, appUpdateLogs,topStyleImage,isForcedUpdate,updateButtonBackground);
+        UpdateAppDialogFragment dialogFragment = UpdateAppDialogFragment.newInstance(appDownloadUrl, appVersion, appSize, appUpdateButtonText, appUpdateLogs, topStyleImage, isForcedUpdate, updateButtonBackground);
         dialogFragment.setContext(mContext);
         dialogFragment.show(((FragmentActivity) mContext).getSupportFragmentManager(), "dialog");
 

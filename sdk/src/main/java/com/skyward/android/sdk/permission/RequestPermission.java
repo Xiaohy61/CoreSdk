@@ -19,14 +19,11 @@ public class RequestPermission {
         if(hasPermission(context,permissions)){
             listener.onPermissionSuccess();
         }else {
+            listener.onPermissionFailure(permissions);
             PermissionDialogFragment dialogFragment = PermissionDialogFragment.newInstance(permissions);
             dialogFragment.onPermissionListener(listener);
             dialogFragment.show(((FragmentActivity) context).getSupportFragmentManager(), "dialog");
         }
-
-
-
-
 
     }
 

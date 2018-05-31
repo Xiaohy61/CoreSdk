@@ -14,18 +14,18 @@ import okhttp3.Request;
  */
 public class DownloadHttpUtil {
     private OkHttpClient mOkHttpClient;
-    private static DownloadHttpUtil instance;
+
     private static final long CONNECT_TIMEOUT = 60;
     private final static long READ_TIMEOUT = 60;
     private final static long WRITE_TIMEOUT = 60;
 
     private static class Holder{
-        private static final DownloadHttpUtil instance = new DownloadHttpUtil();
+        private static final DownloadHttpUtil INSTANCE = new DownloadHttpUtil();
     }
 
 
     public static DownloadHttpUtil getInstance() {
-        return Holder.instance;
+        return Holder.INSTANCE;
     }
 
     private DownloadHttpUtil() {

@@ -8,9 +8,9 @@ import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
- * @author: skyward
  * date: 2018/4/21
  * desc: 网络请求
+ * @author skyward
  */
 public class SubNetworkRequest {
 
