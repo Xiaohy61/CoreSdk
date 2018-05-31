@@ -9,7 +9,7 @@ android {
         minSdkVersion 17
         targetSdkVersion 27
         versionCode 1
-        versionName "1.0.0"
+        versionName "1.0.1"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
@@ -42,6 +42,6 @@ dependencies {
     api 'com.android.support:recyclerview-v7:27.1.1'
 }
 apply plugin: 'com.github.dcendents.android-maven'
-version = "1.0.0"
+version = "1.0.1"
 // 发布到组织名称名字，必须填写，一般填你唯一的包名
 group = "com.skyward.sdk"
