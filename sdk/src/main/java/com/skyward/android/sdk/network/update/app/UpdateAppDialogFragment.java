@@ -22,7 +22,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.skyward.android.sdk.BuildConfig;
 import com.skyward.android.sdk.R;
 import com.skyward.android.sdk.base.BaseDialogFragment;
 import com.skyward.android.sdk.custom.toast.MyToast;
@@ -246,7 +245,8 @@ public class UpdateAppDialogFragment extends BaseDialogFragment implements View.
         //判断是否是AndroidN以及更高的版本
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
             intent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
-            Uri contentUri = FileProvider.getUriForFile(context, BuildConfig.APPLICATION_ID + ".fileProvider", file);
+            String authority = context.getApplicationInfo().packageName + ".provider";
+            Uri contentUri = FileProvider.getUriForFile(context, authority, file);
             intent.setDataAndType(contentUri, "application/vnd.android.package-archive");
         } else {
             intent.setDataAndType(Uri.fromFile(file), "application/vnd.android.package-archive");

@@ -1,23 +1,23 @@
 -- Merging decision tree log ---
 manifest
-ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:1:1-21:12
-INJECTED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:1:1-21:12
-INJECTED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:1:1-21:12
-INJECTED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:1:1-21:12
-INJECTED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:1:1-21:12
-INJECTED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:1:1-21:12
-INJECTED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:1:1-21:12
+ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:1:1-22:12
+INJECTED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:1:1-22:12
+INJECTED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:1:1-22:12
+INJECTED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:1:1-22:12
+INJECTED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:1:1-22:12
+INJECTED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:1:1-22:12
+INJECTED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:1:1-22:12
 	package
 		ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:2:11-44
 		INJECTED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml
 		INJECTED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml
-		ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:1:1-21:12
+		ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:1:1-22:12
 		INJECTED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml
-		ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:1:1-21:12
+		ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:1:1-22:12
 		INJECTED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:1:11-69
@@ -37,24 +37,28 @@ uses-permission#android.permission.READ_EXTERNAL_STORAGE
 ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:7:5-79
 	android:name
 		ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:7:22-77
+uses-permission#android.permission.REQUEST_INSTALL_PACKAGES
+ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:8:5-82
+	android:name
+		ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:8:22-80
 application
-ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:9:5-20:19
+ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:10:5-21:19
 provider#com.skyward.android.sdk.utils.SdkProvider
-ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:10:9-18:20
+ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:11:9-19:20
 	android:grantUriPermissions
-		ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:13:13-47
+		ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:14:13-47
 	android:authorities
-		ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:12:13-60
+		ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:13:13-60
 	android:exported
-		ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:14:13-37
+		ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:15:13-37
 	android:name
-		ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:11:13-69
+		ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:12:13-69
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:15:13-17:54
+ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:16:13-18:54
 	android:resource
-		ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:17:17-51
+		ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:18:17-51
 	android:name
-		ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:16:17-67
+		ADDED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml:17:17-67
 uses-sdk
 INJECTED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from F:\AndroidProject\2018\CoreSdk\sdk\src\main\AndroidManifest.xml

@@ -7,7 +7,7 @@ INJECTED from F:\AndroidProject\2018\CoreSdk\app\src\main\AndroidManifest.xml:2:
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\31663\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\6b90510971092c5141dd1708d4d5e917\AndroidManifest.xml:2:1-11:12
 MERGED from [:photoPicker] F:\AndroidProject\2018\CoreSdk\photoPicker\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-25:12
 MERGED from [com.android.support:design:27.1.1] C:\Users\31663\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\ff6f1ef48e40eca692753a9936dac8f9\AndroidManifest.xml:17:1-22:12
-MERGED from [:sdk] F:\AndroidProject\2018\CoreSdk\sdk\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-28:12
+MERGED from [:sdk] F:\AndroidProject\2018\CoreSdk\sdk\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-29:12
 MERGED from [com.github.Xiaohy61:PageStatus:1.0.2] C:\Users\31663\.gradle\caches\transforms-1\files-1.1\PageStatus-1.0.2.aar\9c45dbc9f01a54bae74cfaa71d993ac1\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:support-v4:27.1.1] C:\Users\31663\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\f8e7917acedea93228ba776d01624b0e\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\31663\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\3da515a205a78f8ae2ea998b3d433098\AndroidManifest.xml:17:1-22:12
@@ -66,8 +66,8 @@ MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\31
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\31663\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\6b90510971092c5141dd1708d4d5e917\AndroidManifest.xml:9:5-20
 MERGED from [:photoPicker] F:\AndroidProject\2018\CoreSdk\photoPicker\build\intermediates\manifests\full\debug\AndroidManifest.xml:13:5-23:19
 MERGED from [:photoPicker] F:\AndroidProject\2018\CoreSdk\photoPicker\build\intermediates\manifests\full\debug\AndroidManifest.xml:13:5-23:19
-MERGED from [:sdk] F:\AndroidProject\2018\CoreSdk\sdk\build\intermediates\manifests\full\debug\AndroidManifest.xml:16:5-26:19
-MERGED from [:sdk] F:\AndroidProject\2018\CoreSdk\sdk\build\intermediates\manifests\full\debug\AndroidManifest.xml:16:5-26:19
+MERGED from [:sdk] F:\AndroidProject\2018\CoreSdk\sdk\build\intermediates\manifests\full\debug\AndroidManifest.xml:17:5-27:19
+MERGED from [:sdk] F:\AndroidProject\2018\CoreSdk\sdk\build\intermediates\manifests\full\debug\AndroidManifest.xml:17:5-27:19
 	android:supportsRtl
 		ADDED from F:\AndroidProject\2018\CoreSdk\app\src\main\AndroidManifest.xml:15:9-35
 	android:label
@@ -215,13 +215,17 @@ uses-permission#android.permission.INTERNET
 ADDED from [:sdk] F:\AndroidProject\2018\CoreSdk\sdk\build\intermediates\manifests\full\debug\AndroidManifest.xml:12:5-67
 	android:name
 		ADDED from [:sdk] F:\AndroidProject\2018\CoreSdk\sdk\build\intermediates\manifests\full\debug\AndroidManifest.xml:12:22-64
-provider#com.skyward.android.sdk.utils.SdkProvider
-ADDED from [:sdk] F:\AndroidProject\2018\CoreSdk\sdk\build\intermediates\manifests\full\debug\AndroidManifest.xml:17:9-25:20
-	android:grantUriPermissions
-		ADDED from [:sdk] F:\AndroidProject\2018\CoreSdk\sdk\build\intermediates\manifests\full\debug\AndroidManifest.xml:21:13-47
-	android:authorities
-		ADDED from [:sdk] F:\AndroidProject\2018\CoreSdk\sdk\build\intermediates\manifests\full\debug\AndroidManifest.xml:19:13-60
-	android:exported
-		ADDED from [:sdk] F:\AndroidProject\2018\CoreSdk\sdk\build\intermediates\manifests\full\debug\AndroidManifest.xml:20:13-37
+uses-permission#android.permission.REQUEST_INSTALL_PACKAGES
+ADDED from [:sdk] F:\AndroidProject\2018\CoreSdk\sdk\build\intermediates\manifests\full\debug\AndroidManifest.xml:15:5-83
 	android:name
-		ADDED from [:sdk] F:\AndroidProject\2018\CoreSdk\sdk\build\intermediates\manifests\full\debug\AndroidManifest.xml:18:13-69
+		ADDED from [:sdk] F:\AndroidProject\2018\CoreSdk\sdk\build\intermediates\manifests\full\debug\AndroidManifest.xml:15:22-80
+provider#com.skyward.android.sdk.utils.SdkProvider
+ADDED from [:sdk] F:\AndroidProject\2018\CoreSdk\sdk\build\intermediates\manifests\full\debug\AndroidManifest.xml:18:9-26:20
+	android:grantUriPermissions
+		ADDED from [:sdk] F:\AndroidProject\2018\CoreSdk\sdk\build\intermediates\manifests\full\debug\AndroidManifest.xml:22:13-47
+	android:authorities
+		ADDED from [:sdk] F:\AndroidProject\2018\CoreSdk\sdk\build\intermediates\manifests\full\debug\AndroidManifest.xml:20:13-60
+	android:exported
+		ADDED from [:sdk] F:\AndroidProject\2018\CoreSdk\sdk\build\intermediates\manifests\full\debug\AndroidManifest.xml:21:13-37
+	android:name
+		ADDED from [:sdk] F:\AndroidProject\2018\CoreSdk\sdk\build\intermediates\manifests\full\debug\AndroidManifest.xml:19:13-69
