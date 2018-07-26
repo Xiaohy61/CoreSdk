@@ -11,6 +11,9 @@ import android.widget.TextView;
 import com.skyward.android.myapp.R;
 import com.skyward.android.sdk.jsBridge.JsInterface;
 
+/**
+ * @author skyward
+ */
 public class WebViewJsActivity extends AppCompatActivity {
 
     private WebView mWebView;
